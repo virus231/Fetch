@@ -45,7 +45,10 @@ function main4() {
 function main5() {
 	fetch(url) 		//Відправили запрос
 		.then(responce => responce.json()) // Отримали дані і конвертували їх в JSON
-		.then(data => console.log(data)); 
+		.then(data => console.log(data))
+		.catch(err => {
+			console.log(err);
+		});
 
 }
 
